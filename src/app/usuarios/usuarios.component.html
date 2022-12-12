@@ -1,0 +1,28 @@
+<div class="titulo">
+  <h2>Usuários Conectados ao Servidor: </h2>
+</div>
+
+<div class="dados">
+    <table>
+      <tr class="itens">
+        <td class = "Dado1">ID</td>
+        <td class = "Dado1">Nome</td>
+        <td class = "Dado1">Apelido</td>
+        <td class = "Dado1">Email</td>
+      </tr>
+
+      <tr *ngFor= "let dUsuario of usuario">
+        <td class = "Dado1">{{dUsuario.id}}</td>
+        <td class = "Dado">{{dUsuario.name}}</td>
+        <td class = "Dado">{{dUsuario.username}}</td>
+        <td class = "Dado">{{dUsuario.email}}</td>
+      </tr>
+    </table>
+</div>
+
+
+<div class="container">
+    <span>Numero de Usuários Cadastrados: </span>
+      <span class="num">{{ usuario.length }}</span>
+</div>
+
